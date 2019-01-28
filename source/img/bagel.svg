@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2429ff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="бублик" class="cls-1" d="M54,284a25,25,0,1,1-25,25A25,25,0,0,1,54,284Zm0,8.813A16.187,16.187,0,1,1,37.813,309,16.187,16.187,0,0,1,54,292.813Z" transform="translate(-29 -284)"/>
+</svg>

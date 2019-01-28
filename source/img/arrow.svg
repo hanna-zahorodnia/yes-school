@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="9.09" viewBox="0 0 13 9.09">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f5112c;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="стрелка" class="cls-1" d="M39,6522H52v2H39v-2Zm6.5-3.33L51.67,6522l-0.95,1.76-6.17-3.33Zm5,4L44.33,6526l0.95,1.76,6.169-3.33Z" transform="translate(-39 -6518.66)"/>
+</svg>
