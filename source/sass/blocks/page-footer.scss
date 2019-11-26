@@ -1,0 +1,9 @@
+.page-footer__logo {
+  display: block;
+
+  text-align: center;
+}
+
+.page-footer__social {
+  @include list-reset;
+}

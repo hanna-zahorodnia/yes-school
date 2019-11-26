@@ -1,0 +1,34 @@
+.free-class__wrapper {
+  padding-top: 308px;
+  padding-bottom: 127px;
+}
+
+.free-class__title {
+  position: relative;
+  display: block;
+  margin: 0 0 18px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 7px;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #f5112c;
+  }
+}
+
+.free-class__text {
+  margin: 0 0 20px;
+
+  text-align: center;
+}

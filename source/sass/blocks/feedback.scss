@@ -1,0 +1,74 @@
+.feedback__wrapper {
+  padding-top: 65px;
+  padding-bottom: 50px;
+}
+
+.feedback__title {
+  position: relative;
+  display: block;
+  margin: 0 0 50px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 7px;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #f5112c;
+  }
+}
+
+.feedback__list {
+  @include list-reset;
+}
+
+.feedback__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__student-photo {
+  order: -1;
+  width: 156px;
+  height: 156px;
+
+  margin: 0 auto 25px;
+}
+
+.feedback__student-name {
+  margin: 0 0 10px;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+.feedback__text {
+  margin: 0 0 8px;
+
+  text-align: center;
+}
+
+.feedback__student-vk-wrapper {
+  margin: 0;
+
+  text-align: center;
+}
+
+.feedback__student-vk {
+  padding-bottom: 3px;
+
+  line-height: 24px;
+
+  color: #f5112c;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}

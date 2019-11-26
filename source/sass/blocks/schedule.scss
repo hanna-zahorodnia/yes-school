@@ -1,0 +1,67 @@
+.schedule__wrapper {
+  padding-top: 438px;
+  padding-bottom: 35px;
+}
+
+.schedule__price {
+  display: block;
+  margin: 0 0 10px;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  text-align: center;
+
+  color: #f5112c;
+}
+
+.schedule__title {
+  position: relative;
+  display: block;
+  margin: 0 0 13px;
+  padding-bottom: 18px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 7px;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #f5112c;
+  }
+}
+
+.schedule__description {
+  margin: 0 0 32px;
+
+  text-align: center;
+}
+
+.schedule__list {
+  @include list-reset;
+
+  text-align: center;
+}
+
+.schedule__item {
+  margin-bottom: 25px;
+}
+
+.schedule__week {
+  margin: 0 0 9px;
+
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.schedule__week-description {
+  margin: 0;
+}

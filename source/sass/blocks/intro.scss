@@ -1,0 +1,40 @@
+.intro__wrapper {
+  padding-top: 310px;
+  padding-bottom: 75px;
+}
+
+.intro__title {
+  position: relative;
+
+  margin: 0 0 12px;
+  padding-bottom: 18px;
+
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.intro__title::after {
+  content: "";
+  position: absolute;
+
+  width: 64px;
+  height: 7px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f5112c;
+}
+
+.intro__title-small {
+  display: block;
+
+  font-size: 18px;
+}
+
+.intro__text {
+  margin: 0 0 12px;;
+
+  text-align: center;
+}

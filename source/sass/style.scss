@@ -1,8 +1,23 @@
 //  Globals
 @import "scaffolding.scss";
+@import "mixins.scss";
 @import "fonts.scss";
 
 // Vendors
 @import "vendors/normalize.scss";
 
 // Blocks
+@import "blocks/container.scss";
+@import "blocks/button.scss";
+@import "blocks/logo.scss";
+@import "blocks/page-header.scss";
+@import "blocks/intro.scss";
+@import "blocks/problems.scss";
+@import "blocks/solutions.scss";
+@import "blocks/teachers.scss";
+@import "blocks/schedule.scss";
+@import "blocks/process.scss";
+@import "blocks/feedback.scss";
+@import "blocks/contact.scss";
+@import "blocks/free-class.scss";
+@import "blocks/page-footer.scss";

@@ -1,0 +1,77 @@
+.process__wrapper {
+  padding-top: 82px;
+  padding-bottom: 65px;
+}
+
+.process__title {
+  position: relative;
+
+  display: block;
+  margin-bottom: 36px;
+  padding-bottom: 23px;
+
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 64px;
+    height: 7px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #f5112c;
+  }
+}
+
+.process__list {
+  @include list-reset;
+}
+
+.process__item {
+  margin-bottom: 36px;
+}
+
+.process__name {
+  position: relative;
+  left: 40%;
+  transform: translateX(-40%);
+
+  display: inline-block;
+
+  margin: 0 0 8px;
+  padding-left: 35px;
+
+  font-size: 14px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 13px;
+    height: 9px;
+    top: 6px;
+    left: 0;
+
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.process__description {
+  margin: 0 0 24px;
+
+  text-align: center;
+}
+
+.process__photo {
+  width: 100%;
+
+  display: block;
+}
