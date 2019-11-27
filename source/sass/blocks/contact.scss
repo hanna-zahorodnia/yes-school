@@ -19,3 +19,22 @@
   border-bottom: 1px solid;
   padding-bottom: 3px;
 }
+
+.contact__address {
+  display: none;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    flex-basis: 552px;
+    justify-content: space-between;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .contact__address {
+    display: block;
+  }
+}

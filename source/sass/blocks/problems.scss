@@ -25,14 +25,14 @@
 
   &::after {
     content: "?";
-  position: absolute;
-  z-index: -1;
-  top: 38px;
-  right: 38px;
-  transform: scale(8);
+    position: absolute;
+    z-index: -1;
+    top: 38px;
+    right: 38px;
+    transform: scale(8);
 
-  color: #e2e2e2;
-  opacity: 0.7;
+    color: #e2e2e2;
+    opacity: 0.7;
   }
 }
 
@@ -87,3 +87,119 @@
   line-height: 28px;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .problems__wrapper {
+    padding-top: 105px;
+    padding-bottom: 200px;
+  }
+
+  .problems__title {
+    padding: 0 400px 0 8px;
+    margin-bottom: 58px;
+
+    font-size: 30px;
+    line-height: 38px;
+    text-align: left;
+
+    &::after {
+      top: 22px;
+      right: unset;
+      left: 270px;
+      transform: scale(6.5);
+    }
+  }
+
+  .problems__text {
+    padding-left: 10px;
+    margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+
+    &--passanger {
+      padding-right: 60px;
+    }
+
+    &--compass {
+      margin-left: 50px;
+      padding-right: 70px;
+    }
+
+    &--traveller {
+      padding-right: 50px;
+    }
+
+    &--result {
+      padding-left: 30px;
+      margin-top: 80px;
+    }
+  }
+
+  .problems__item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 62px;
+
+    &--compass {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .problems__number {
+    position: absolute;
+
+    &--one {
+      top: 55px;
+      right: 368px;
+    }
+
+    &--two {
+      top: 40px;
+      left: 315px;
+    }
+
+    &--three {
+      top: 150px;
+      right: 304px;
+    }
+  }
+
+  .problems__img {
+    flex-shrink: 0;
+
+    &--passangers {
+      width: 407px;
+    }
+
+    &--compass {
+      width: 344px;
+    }
+
+    &--traveller {
+      width: 343px;
+    }
+
+    &--relax {
+      width: 346px;
+    }
+  }
+
+  .problems__conclusion {
+    position: relative;
+
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .problems__result {
+    position: absolute;
+    left: 300px;
+    top: 27px;
+  }
+}
+

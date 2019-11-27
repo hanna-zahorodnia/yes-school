@@ -6,3 +6,18 @@
 
   padding-top: 15px;
 }
+
+@media (min-width: 768px) {
+  .page-header__wrapper {
+    padding-top: 25px;
+  }
+
+  .page-header__contact {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-header__logo {
+    margin-top: 10px;
+  }
+}

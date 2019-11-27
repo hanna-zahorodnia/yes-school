@@ -1,6 +1,10 @@
 .intro__wrapper {
-  padding-top: 310px;
+  padding-top: 315px;
   padding-bottom: 75px;
+
+  background-image: url("../img/bus-small.png");
+  background-repeat: no-repeat;
+  background-position: center -20px;
 }
 
 .intro__title {
@@ -13,18 +17,18 @@
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
-}
 
-.intro__title::after {
-  content: "";
-  position: absolute;
+  &::after {
+    content: "";
+    position: absolute;
 
-  width: 64px;
-  height: 7px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #f5112c;
+    width: 64px;
+    height: 7px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f5112c;
+  }
 }
 
 .intro__title-small {
@@ -37,4 +41,48 @@
   margin: 0 0 12px;;
 
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .intro__wrapper {
+    padding-top: 105px;
+    padding-left: 342px;
+
+    background-image: url("../img/bus-medium.png");
+    background-repeat: no-repeat;
+    background-position: -52px -45px;
+  }
+
+  .intro__title-small {
+    margin-bottom: 0;
+
+    font-size: 24px;
+  }
+
+  .intro__title {
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 38px;
+    text-align: left;
+
+    &::after {
+      bottom: -5px;
+      left: 0;
+      transform: inherit;
+    }
+  }
+
+  .intro__text {
+    margin-bottom: 70px;
+
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+  }
+
+  .intro__link {
+    display: inline-block;
+    padding: 20px 28px;
+  }
 }
