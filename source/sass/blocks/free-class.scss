@@ -1,6 +1,10 @@
 .free-class__wrapper {
-  padding-top: 308px;
+  padding-top: 258px;
   padding-bottom: 127px;
+
+  background-image: url("../img/plane-small.png");
+  background-repeat: no-repeat;
+  background-position: center 40px;
 }
 
 .free-class__title {
@@ -21,7 +25,6 @@
     height: 7px;
     bottom: 0;
     left: 50%;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     background-color: #f5112c;
   }

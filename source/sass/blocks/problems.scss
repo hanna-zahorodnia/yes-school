@@ -1,8 +1,8 @@
 .problems {
   background-image: url("../img/background-mob.png");
   background-repeat: no-repeat;
-  background-position: 0;
-  background-size: cover;
+  background-position: center -200px;
+  background-size: 100%;
 }
 
 .problems__wrapper {
@@ -88,10 +88,21 @@
   text-align: center;
 }
 
+@media (min-width: 414px) {
+  .problems {
+    background-position: center -270px;
+  }
+}
+
 @media (min-width: 768px) {
+  .problems {
+    background-image: url("../img/background-tablet.png");
+    background-position: center -120px;
+  }
+
   .problems__wrapper {
-    padding-top: 105px;
-    padding-bottom: 200px;
+    padding-top: 120px;
+    padding-bottom: 80px;
   }
 
   .problems__title {
@@ -119,7 +130,21 @@
     text-align: left;
 
     &--passanger {
+      position: relative;
+
       padding-right: 60px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 125px;
+        left: 230px;
+        width: 145px;
+        height: 19px;
+        background-image: url("../img/wave.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
     }
 
     &--compass {

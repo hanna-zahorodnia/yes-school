@@ -66,8 +66,15 @@
 }
 
 @media (min-width: 768px) {
+  .solutions {
+    background-image: url("../img/photographer.png");
+    background-repeat: no-repeat;
+    background-position: 440px -10px;
+  }
+
   .solutions__wrapper {
     padding-top: 108px;
+    padding-bottom: 172px;
   }
 
   .solutions__title {
@@ -99,14 +106,21 @@
   }
 
   .solutions__name {
+    margin-bottom: 12px;
+
     font-size: 16px;
     line-height: 24px;
+
+    &::after {
+      left: 0;
+      transform: unset;
+    }
   }
 
   .solutions__description {
+    margin: 0;
+
     font-size: 16px;
     line-height: 24px;
   }
 }
-
-

@@ -1,5 +1,10 @@
+.schedule {
+  background-image: url("../img/bigben-small.png");
+  background-repeat: no-repeat;
+}
+
 .schedule__wrapper {
-  padding-top: 438px;
+  padding-top: 425px;
   padding-bottom: 35px;
 }
 
@@ -33,7 +38,6 @@
     height: 7px;
     bottom: 0;
     left: 50%;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     background-color: #f5112c;
   }
@@ -56,7 +60,7 @@
 }
 
 .schedule__week {
-  margin: 0 0 9px;
+  margin: 0 0 8px;
 
   font-size: 14px;
   font-weight: 900;
@@ -64,4 +68,62 @@
 
 .schedule__week-description {
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .schedule {
+    background-image: url("../img/bigben-medium.png");
+    background-repeat: no-repeat;
+    background-position: -150px 10px;
+    background-size: contain;
+  }
+
+  .schedule__wrapper {
+    padding-top: 67px;
+    padding-left: 145px;
+  }
+
+  .schedule__title {
+    margin-bottom: 25px;
+
+    font-size: 30px;
+    line-height: 38px;
+    text-align: left;
+
+    &::after {
+      left: 0;
+      transform: unset;
+    }
+  }
+
+  .schedule__price {
+    margin-bottom: 32px;
+
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .schedule__description {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .schedule__list {
+    column-count: 2;
+    column-gap: 15px;
+
+    text-align: left;
+  }
+
+  .schedule__week {
+    margin-bottom: 15px;
+  }
+
+  .schedule__week-description {
+    padding-right: 18px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

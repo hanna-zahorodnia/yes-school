@@ -1,3 +1,7 @@
+.teachers__wrapper {
+  padding-bottom: 15px;
+}
+
 .teachers__title {
   display: block;
   margin-bottom: 35px;
@@ -40,4 +44,36 @@
 
 .teachers__description {
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .teachers__title {
+    margin-bottom: 60px;
+
+    text-align: left;
+  }
+
+  .teachers__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .teachers__item {
+    flex-basis: 48%;
+  }
+
+  .teachers__name {
+    font-size: 18px;
+  }
+
+  .teachers__description {
+    padding-right: 10px;
+
+    line-height: 24px;
+  }
+
+  .teachers__photo {
+    margin-bottom: 22px;
+  }
 }

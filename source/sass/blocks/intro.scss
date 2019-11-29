@@ -2,7 +2,7 @@
   padding-top: 315px;
   padding-bottom: 75px;
 
-  background-image: url("../img/bus-small.png");
+  background-image: url("../img/bus-mob.png");
   background-repeat: no-repeat;
   background-position: center -20px;
 }
@@ -38,15 +38,37 @@
 }
 
 .intro__text {
-  margin: 0 0 12px;;
+  margin: 0 0 12px;
 
   text-align: center;
 }
 
 @media (min-width: 768px) {
+  .intro {
+    position: relative;
+
+    overflow: hidden;
+
+    &::before {
+      content: "english yes";
+      position: absolute;
+      z-index: -1;
+      top: 115px;
+      left: 230px;
+
+      color: #e2e2e2;
+      font-weight: 900;
+      font-size: 165px;
+      line-height: 130px;
+      text-align: right;
+      opacity: 0.5;
+    }
+  }
+
   .intro__wrapper {
     padding-top: 105px;
     padding-left: 342px;
+    padding-bottom: 60px;
 
     background-image: url("../img/bus-medium.png");
     background-repeat: no-repeat;
@@ -74,11 +96,25 @@
   }
 
   .intro__text {
+    position: relative;
+
     margin-bottom: 70px;
 
     font-size: 16px;
     line-height: 25px;
     text-align: left;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 75px;
+      left: -50px;
+      width: 145px;
+      height: 19px;
+      background-image: url("../img/wave.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 
   .intro__link {
