@@ -93,10 +93,24 @@
   }
 
   .solutions__list {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
 
     text-align: left;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 165px;
+      right: 0;
+      width: 145px;
+      height: 19px;
+      background-image: url("../img/wave.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 
   .solutions__item {

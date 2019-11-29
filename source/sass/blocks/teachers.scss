@@ -47,6 +47,22 @@
 }
 
 @media (min-width: 768px) {
+  .teachers {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 40px;
+      right: 0;
+      width: 335px;
+      height: 435px;
+      background-image: url("../img/bagel-wave.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
   .teachers__title {
     margin-bottom: 60px;
 

@@ -84,6 +84,8 @@
   }
 
   .schedule__title {
+    max-width: 500px;
+
     margin-bottom: 25px;
 
     font-size: 30px;
@@ -93,6 +95,18 @@
     &::after {
       left: 0;
       transform: unset;
+    }
+
+    &::before {
+      content: "?";
+      position: absolute;
+      z-index: -1;
+      top: 15px;
+      right: 65px;
+      transform: scale(8);
+
+      color: #e2e2e2;
+      opacity: 0.7;
     }
   }
 

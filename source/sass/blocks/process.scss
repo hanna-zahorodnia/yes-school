@@ -1,6 +1,13 @@
+.process {
+  background-image: url("../img/bg-mob-2.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 100%;
+}
+
 .process__wrapper {
   padding-top: 82px;
-  padding-bottom: 65px;
+  padding-bottom: 110px;
 }
 
 .process__title {
@@ -77,6 +84,12 @@
 }
 
 @media (min-width: 768px) {
+  .process {
+    background-image: url("../img/bg-tablet-2.png");
+    background-position: center 120px;
+    background-size: unset;
+  }
+
   .process__wrapper {
     padding-top: 155px;
   }
@@ -120,11 +133,70 @@
   }
 
   .process__name {
+    position: relative;
+
     font-size: 16px;
     line-height: 24px;
+
+    &--simple {
+      &::after {
+        content: "просто";
+        position: absolute;
+        z-index: -1;
+        top: -25px;
+        right: -72px;
+
+        font-size: 72px;
+        color: #e2e2e2;
+        opacity: 0.6;
+      }
+    }
+
+    &--interaction {
+      &::after {
+        content: "общение";
+        position: absolute;
+        z-index: -1;
+        top: -35px;
+        right: 42px;
+
+        font-size: 72px;
+        color: #e2e2e2;
+        opacity: 0.6;
+      }
+    }
+
+    &--practice {
+      &::after {
+        content: "практика";
+        position: absolute;
+        z-index: -1;
+        top: -20px;
+        right: -62px;
+
+        font-size: 72px;
+        color: #e2e2e2;
+        opacity: 0.6;
+      }
+    }
+
+    &--repeat {
+      &::after {
+        content: "повтор";
+        position: absolute;
+        z-index: -1;
+        top: -30px;
+        left: 0;
+
+        font-size: 72px;
+        color: #e2e2e2;
+        opacity: 0.6;
+      }
+    }
   }
 
   .process__description {
+    z-index: 1;
     margin-bottom: 0;
     padding-left: 35px;
 
@@ -134,6 +206,7 @@
   }
 
   .process__photo {
+    z-index: 1;
     width: 345px;
   }
 }
