@@ -25,22 +25,8 @@
   display: block;
   margin: 0 0 13px;
   padding-bottom: 18px;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 64px;
-    height: 7px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #f5112c;
-  }
+  @include border-bottom;
 }
 
 .schedule__description {
@@ -87,15 +73,6 @@
     max-width: 500px;
 
     margin-bottom: 25px;
-
-    font-size: 30px;
-    line-height: 38px;
-    text-align: left;
-
-    &::after {
-      left: 0;
-      transform: unset;
-    }
 
     &::before {
       content: "?";

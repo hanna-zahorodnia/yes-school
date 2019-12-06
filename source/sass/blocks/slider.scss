@@ -52,8 +52,30 @@
 }
 
 @media (min-width: 768px) {
+  .slider__container {
+    max-width: unset;
+
+    margin-bottom: 60px;
+  }
+
   .slider__item {
+    flex-direction: row;
     margin: 0;
+  }
+
+  .slider__controls {
+    max-width: 728px;
+
+    display: flex;
+  }
+
+  .slider__control {
+    width: 33%;
+    height: 7px;
+
+    margin: 0;
+
+    border-radius: 8px;
   }
 }
 

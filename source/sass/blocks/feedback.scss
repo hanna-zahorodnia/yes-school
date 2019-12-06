@@ -14,16 +14,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 64px;
-    height: 7px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #f5112c;
-  }
+  @include border-bottom;
 }
 
 .feedback__list {
@@ -70,4 +61,46 @@
   color: #f5112c;
   text-decoration: none;
   border-bottom: 1px solid;
+}
+
+@media (min-width: 768px) {
+  .feedback__wrapper {
+    padding-top: 115px;
+    padding-bottom: 150px;
+  }
+
+  .feedback__title {
+    margin-bottom: 65px;
+  }
+
+  .feedback__student-photo {
+    margin-right: 30px;
+  }
+
+  .feedback__student-name {
+    margin-bottom: 28px;
+
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .feedback__text {
+    padding-right: 70px;
+
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .feedback__student-vk-wrapper {
+    padding-bottom: 3px;
+
+    text-align: left;
+  }
+
+  .feedback__student-vk {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

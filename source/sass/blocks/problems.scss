@@ -17,12 +17,6 @@
   display: block;
   margin: 0 0 68px;
 
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 28px;
-  text-transform: uppercase;
-  text-align: center;
-
   &::after {
     content: "?";
     position: absolute;
@@ -108,10 +102,6 @@
   .problems__title {
     padding: 0 400px 0 8px;
     margin-bottom: 58px;
-
-    font-size: 30px;
-    line-height: 38px;
-    text-align: left;
 
     &::after {
       top: 22px;

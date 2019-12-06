@@ -4,3 +4,25 @@
 
   list-style: none;
 }
+
+@mixin border-bottom {
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 64px;
+    height: 7px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f5112c;
+  }
+
+  @media (min-width: 768px) {
+    &::after {
+      bottom: -5px;
+      left: 0;
+      transform: inherit;
+    }
+  }
+}
